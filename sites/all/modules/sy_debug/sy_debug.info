@@ -1,0 +1,5 @@
+name = "SY DEBUG"
+description = "Запись данных в файл для служебных нужд"
+package = SY-Soft
+core=7.x
+version = "7.x-2.0"

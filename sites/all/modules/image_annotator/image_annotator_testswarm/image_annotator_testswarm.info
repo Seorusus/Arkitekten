@@ -1,0 +1,14 @@
+name = Imagefield Annotator Testswarm
+description = Testswarm Tests for Imagefield Annotator
+package = Effects
+core = 7.x
+dependencies[] = image_annotator
+dependencies[] = testswarm
+dependencies[] = image_annotator_testswarm_features
+
+; Information added by Drupal.org packaging script on 2014-07-07
+version = "7.x-2.x-dev"
+core = "7.x"
+project = "image_annotator"
+datestamp = "1404738535"
+

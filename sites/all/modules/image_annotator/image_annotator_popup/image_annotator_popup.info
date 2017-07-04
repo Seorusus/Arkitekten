@@ -1,0 +1,16 @@
+name = Image Annotator Popup
+description = "Extension module to Image Annotator. You can show datas in popup window."
+package = Effects
+core = 7.x
+
+dependencies[] = field_collection
+dependencies[] = image_annotator
+dependencies[] = libraries
+dependencies[] = jquery_update
+
+; Information added by Drupal.org packaging script on 2014-07-07
+version = "7.x-2.x-dev"
+core = "7.x"
+project = "image_annotator"
+datestamp = "1404738535"
+

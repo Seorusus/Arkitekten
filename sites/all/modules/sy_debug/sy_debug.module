@@ -1,0 +1,138 @@
+<?php
+include_once('test.inc');
+include_once('mod1.inc');
+function sy_debug_menu() {
+
+    $items['admin/sy_debug'] = array(
+    'title' => 'Отладка',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sy_debug_form'),
+    'access arguments' => array('administer content'),
+    'type' => MENU_NORMAL_ITEM,
+    'weight' => 5,
+  );
+    $items['admin/my_form'] = array(
+    'title' => 'my_form',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sy_debug_my_form'),
+    'access arguments' => array('administer content'),
+    'type' => MENU_NORMAL_ITEM,
+    'weight' => 5,
+  );
+   $items['add-comment/%node'] = array(
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sy_debug_add_comment_form',1),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK ,
+    'weight' => 5,
+  );
+
+  return $items;
+}
+function sy_debug_form() {
+
+//	if($account) echo '1';
+//	echo '<pre>'; print_r($account); exit();
+  $form = array();
+
+    $form['info'] = array(
+  '#type' => 'fieldset', 
+  '#title' => 'info', 
+  '#weight' => -150, 
+  '#collapsible' => FALSE, 
+  '#collapsed' => FALSE,
+);
+
+  
+$form['body'] = array(
+  '#type' => 'textarea', 
+  '#rows' => 25, 
+  '#default_value' => sy_debug_read(),'#weight' => 100,
+);
+
+  $form['reopen'] = array(
+    '#type'  => 'submit',
+    '#value' => 'Обновить','#weight' => 150,
+  );
+  $form['clear'] = array(
+    '#type'  => 'submit',
+    '#value' => 'Очистить','#weight' => 50,
+  );
+
+  return $form;
+}
+function sy_debug_form_submit($form, &$form_state) {
+	global $base_path;
+	if($form_state['clicked_button']['#value']=='Очистить')
+	{
+
+ $filename = drupal_get_path('module', 'sy_debug')."/deb.txt"; 
+
+ // Если файл существует и в него возможна запись 
+
+ if ( is_writeable($filename) ) : 
+
+ // Открыть файл и установить указатель текущей позиции в конец файла 
+
+ $fh = fopen($filename, "w"); 
+
+ // Записать содержимое $data в файл 
+
+fwrite($fh, "------------------------------------------------------------------------------------------------------------\n"); 
+
+ // Закрыть файл 
+
+ fclose($fh); else : 
+
+// print "Could not open Sfilename for writing"; 
+
+ endif; 		
+	}
+	
+}
+function sy_debug_write($in)
+{
+global $base_path;
+ $filename = $base_path.drupal_get_path('module', 'sy_debug')."/deb.txt"; 
+$filename = 'sites/all/modules/_sy/sy_debug/deb.txt';
+ // Если файл существует и в него возможна запись 
+
+ if ( is_writeable($filename) ) : 
+
+ // Открыть файл и установить указатель текущей позиции в конец файла 
+
+ $fh = fopen($filename, "a+"); 
+
+ // Записать содержимое $data в файл 
+
+fwrite($fh, $in."\n"); 
+
+ // Закрыть файл 
+
+ fclose($fh); else : 
+
+// print "Could not open Sfilename for writing"; 
+
+ endif; 
+	
+}
+function sy_debug_read()
+{
+global $base_path;
+ $filename = $base_path.drupal_get_path('module', 'sy_debug')."/deb.txt"; 
+ $filename = 'sites/all/modules/_sy/sy_debug/deb.txt';
+if ( is_readable($filename) ) {
+ // Открыть файл и установить указатель текущей позиции в конец файла 
+
+$handle = fopen($filename, "r");
+$contents = fread($handle, filesize($filename));
+fclose($handle);
+
+  return $contents;
+}
+ else { 
+
+ return "$filename is not readable!"; 
+ }
+	
+}

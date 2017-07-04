@@ -1,0 +1,13 @@
+name = Image Annotator
+description = Allows you to link values to an image. Supports Field Collection.
+package = Effects
+core = 7.x
+dependencies[] = image
+dependencies[] = json2
+
+; Information added by Drupal.org packaging script on 2014-07-07
+version = "7.x-2.x-dev"
+core = "7.x"
+project = "image_annotator"
+datestamp = "1404738535"
+
