@@ -36,11 +36,12 @@
 
             }		
 			
-			$(".sf-menu li ul").mouseover(function() {
-                $(".sf-menu .menuparent.sfHover ul li").hover(function() {
+			/*$(".sf-menu li ul").mouseover(function() {*/
+               /* $(".sf-menu .menuparent.sfHover ul li").hover(function() {*/
+			  $(".sf-menu li ul").hover(function() {
                     $(".sf-menu .menuparent.sfHover a").removeClass("is-hover"); $(this).parent().parent().children().addClass("is-hover");
                 });
-            });
+           /* });*/
             $(".sf-menu").mouseout(function() {
 				$(".sf-menu li a").removeClass("is-hover");
 			});
