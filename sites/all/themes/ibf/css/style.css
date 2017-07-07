@@ -117,10 +117,10 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     color: #ae2e23;
 	text-decoration: none;
 }
-/*
-.sf-menu .menuparent.sfHover a:first-child{
+
+.sf-menu .menuparent.sfHover a.is-hover{
 	color: #ae2e23;
-}*/
+}
 
 .sf-menu.sf-style-white li li, .sf-menu.sf-style-white li li li {
     background: white none repeat scroll 0 0;
