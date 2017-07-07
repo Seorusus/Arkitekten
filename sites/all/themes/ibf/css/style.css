@@ -95,8 +95,15 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 }
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
     left: 0;
-    top: 32px;
+    //top: 32px;
+	top: 30px
 }
+
+.sf-menu li:hover > ul li:first-child a, .sf-menu li.sfHover > ul  li:first-child a{
+	padding-top: 20px;
+}
+
+
 
 .sf-menu.sf-style-white li:hover,
 .sf-menu.sf-style-white li.sfHover,
@@ -109,6 +116,10 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     background: white;
     color: #ae2e23;
 	text-decoration: none;
+}
+
+.sf-menu .menuparent.sfHover a{
+	color: #ae2e23;
 }
 
 .sf-menu.sf-style-white li li, .sf-menu.sf-style-white li li li {
