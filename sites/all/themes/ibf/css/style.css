@@ -186,10 +186,12 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 
 .main-container-base section.col-sm-4 {
    /* padding-right: 5px; */
+   padding-right: 11.4px;
 }
 
 .main-container-base aside.col-sm-8 {
-    padding-left: 5px;
+  /*  padding-left: 5px;*/
+	padding-left: 0px;
 }
 
 /* main-container container */
