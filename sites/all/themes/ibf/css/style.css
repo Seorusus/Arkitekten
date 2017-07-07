@@ -50,7 +50,8 @@ body.admin-menu {
 }
 
 .head-container a.logo {
-    margin: 0 0 0 -100px;
+   // margin: 0 0 0 -100px;
+	margin: 0 0 0 -92.4px;
     position: absolute;
 }
 
@@ -209,8 +210,9 @@ article.node-combo-page .field .field-item{
     color: white;
     //margin: 10px 0;
    // padding: 5px 19px;
-	margin: 0;
+	//margin: 0;
 	padding: 19px;
+	margin: 0 0 11.4px 0;
 }
 article.node-combo-page .field.field-type-link-field a{
     font-size: 15px;
@@ -250,7 +252,8 @@ body.page-search #block-system-main > h2 {
 
 .inner-page-container .footer-images {
     float: right;
-    margin: 2px;
+   // margin: 2px;
+	margin: 0 11.4px 0 0;
 }
 
 .inner-page-container .footer-images-title {
@@ -274,7 +277,8 @@ body.page-search #block-system-main > h2 {
     -moz-transform: rotate(270deg); /* Firefox */
     -webkit-transform: rotate(270deg); /* Safari and Chrome */
     -o-transform: rotate(270deg); /* Opera */
-    margin: 52px -50px 0 0;
+    //margin: 52px -50px 0 0;
+	margin: 52px -40.6px 0 0;
     background-color: black;
     color: white;
     float: right;
