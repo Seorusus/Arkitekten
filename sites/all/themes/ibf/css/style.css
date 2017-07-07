@@ -118,7 +118,7 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 	text-decoration: none;
 }
 
-.sf-menu .menuparent.sfHover a{
+.sf-menu .menuparent.sfHover a:first-child{
 	color: #ae2e23;
 }
 
