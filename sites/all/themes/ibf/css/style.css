@@ -206,7 +206,7 @@ article.node-combo-page .field .field-item{
     background: black none repeat scroll 0 0;
     color: white;
     margin: 10px 0;
-    padding: 5px 15px;
+    padding: 5px 19px;
 }
 article.node-combo-page .field.field-type-link-field a{
     font-size: 15px;
@@ -226,7 +226,7 @@ body.page-search #block-system-main > h2 {
     float: left;
     font-size: 62px;
     margin: 0 0 20px;
-    padding: 5px;
+    padding: 5px 19px;
 }
 
 .col-sm-4 .region-content {
