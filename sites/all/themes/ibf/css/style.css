@@ -179,7 +179,8 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 }
 
 .main-container-base {
-    margin-top: 110px;
+   // margin-top: 110px;
+	margin-top: 87.4px;
 }
 
 .main-container-base section.col-sm-4 {
@@ -206,8 +207,10 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 article.node-combo-page .field .field-item{
     background: black none repeat scroll 0 0;
     color: white;
-    margin: 10px 0;
-    padding: 5px 19px;
+    //margin: 10px 0;
+   // padding: 5px 19px;
+	margin: 0;
+	padding: 19px;
 }
 article.node-combo-page .field.field-type-link-field a{
     font-size: 15px;
