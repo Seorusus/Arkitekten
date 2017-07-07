@@ -38,7 +38,8 @@ body.admin-menu {
     height: 30px;
     /*    margin-top: 100px;*/
     position: relative;
-    top: 100px;
+    //top: 100px;
+	top: 76px;
     width: 1140px;
 }
 
@@ -49,7 +50,8 @@ body.admin-menu {
 }
 
 .head-container a.logo {
-    margin: 0 0 0 -100px;
+   // margin: 0 0 0 -100px;
+	margin: 0 0 0 -92.4px;
     position: absolute;
 }
 
@@ -77,7 +79,7 @@ body.admin-menu {
 
 .sf-menu.sf-style-white a, .sf-menu.sf-style-white span.nolink {
     border: medium none;
-    color: #898989;
+    color: #1b1b1b;
     padding: 0.75em 1em;
 }
 
@@ -88,7 +90,9 @@ body.admin-menu {
 a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     top: 0.5em;
 }
-
+.sf-menu.sf-style-white .sf-sub-indicator {
+	background-image: none!important;
+}
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
     left: 0;
     top: 32px;
@@ -103,7 +107,8 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 .sf-menu.sf-style-white span.nolink:hover,
 .sf-menu.sf-style-white.sf-navbar li li {
     background: white;
-    color: #d2908f;
+    color: #ae2e23;
+	text-decoration: none;
 }
 
 .sf-menu.sf-style-white li li, .sf-menu.sf-style-white li li li {
@@ -175,15 +180,18 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 }
 
 .main-container-base {
-    margin-top: 110px;
+   // margin-top: 110px;
+	margin-top: 87.4px;
 }
 
 .main-container-base section.col-sm-4 {
    /* padding-right: 5px; */
+   padding-right: 11.4px;
 }
 
 .main-container-base aside.col-sm-8 {
-    padding-left: 5px;
+  /*  padding-left: 5px;*/
+	padding-left: 0px;
 }
 
 /* main-container container */
@@ -202,8 +210,11 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 article.node-combo-page .field .field-item{
     background: black none repeat scroll 0 0;
     color: white;
-    margin: 10px 0;
-    padding: 5px 15px;
+    //margin: 10px 0;
+   // padding: 5px 19px;
+	//margin: 0;
+	padding: 19px;
+	margin: 0 0 11.4px 0;
 }
 article.node-combo-page .field.field-type-link-field a{
     font-size: 15px;
@@ -223,7 +234,7 @@ body.page-search #block-system-main > h2 {
     float: left;
     font-size: 62px;
     margin: 0 0 20px;
-    padding: 5px;
+    padding: 5px 19px;
 }
 
 .col-sm-4 .region-content {
@@ -243,7 +254,8 @@ body.page-search #block-system-main > h2 {
 
 .inner-page-container .footer-images {
     float: right;
-    margin: 2px;
+   // margin: 2px;
+	margin: 0 11.4px 0 0;
 }
 
 .inner-page-container .footer-images-title {
@@ -267,7 +279,8 @@ body.page-search #block-system-main > h2 {
     -moz-transform: rotate(270deg); /* Firefox */
     -webkit-transform: rotate(270deg); /* Safari and Chrome */
     -o-transform: rotate(270deg); /* Opera */
-    margin: 52px -50px 0 0;
+    //margin: 52px -50px 0 0;
+	margin: 52px -40.6px 0 0;
     background-color: black;
     color: white;
     float: right;
