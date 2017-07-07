@@ -77,7 +77,7 @@ body.admin-menu {
 
 .sf-menu.sf-style-white a, .sf-menu.sf-style-white span.nolink {
     border: medium none;
-    color: #898989;
+    color: #1b1b1b;
     padding: 0.75em 1em;
 }
 
@@ -88,7 +88,9 @@ body.admin-menu {
 a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     top: 0.5em;
 }
-
+.sf-menu.sf-style-white .sf-sub-indicator {
+	background-image: none!important;
+}
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
     left: 0;
     top: 32px;
@@ -103,7 +105,8 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 .sf-menu.sf-style-white span.nolink:hover,
 .sf-menu.sf-style-white.sf-navbar li li {
     background: white;
-    color: #d2908f;
+    color: #ae2e23;
+	text-decoration: none;
 }
 
 .sf-menu.sf-style-white li li, .sf-menu.sf-style-white li li li {
