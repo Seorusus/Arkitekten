@@ -95,8 +95,15 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 }
 .sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
     left: 0;
-    top: 32px;
+    //top: 32px;
+	top: 30px
 }
+
+.sf-menu li:hover > ul li:first-child a, .sf-menu li.sfHover > ul  li:first-child a{
+	padding-top: 20px;
+}
+
+
 
 .sf-menu.sf-style-white li:hover,
 .sf-menu.sf-style-white li.sfHover,
@@ -109,6 +116,10 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     background: white;
     color: #ae2e23;
 	text-decoration: none;
+}
+
+.sf-menu .menuparent.sfHover a.is-hover{
+	color: #ae2e23;
 }
 
 .sf-menu.sf-style-white li li, .sf-menu.sf-style-white li li li {
@@ -304,12 +315,12 @@ a.a-lnk0 {
 a.a-lnk1 {
     background: url("../images/lnk-1.png");
     width: 36px;
-    height: 27px;
+    height: 28px;
 }
 
 a.a-lnk2 {
     background: url("../images/lnk-2.png");
-    width: 27px;
+    width: 28px;
     height: 36px;
 }
 
