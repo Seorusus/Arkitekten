@@ -53,6 +53,16 @@ body.admin-menu {
    // margin: 0 0 0 -100px;
 	margin: 0 0 0 -92.4px;
     position: absolute;
+	display: block;
+	background-color: #fff;
+	height: 66px;
+	width: 66px;
+	display: block;
+	text-align: center;
+	padding-top: 5px;
+}
+.head-container a.logo img{
+	height: 50px;
 }
 
 .sf-menu {
