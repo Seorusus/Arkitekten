@@ -77,7 +77,7 @@ $pointers=array();
 if( arg(0)=='node' && (int) arg(1)>0 )
 {
   $in_node=node_load(arg(1));
-  if(is_object($in_node) && $in_node->type=='combo_page' )
+  if(is_object($in_node) && $in_node->type=='combo_page' && (isset($in_node->field_sub_page['und']) && count($in_node->field_sub_page['und'])>0) )
   {
       $pointers=array();
 

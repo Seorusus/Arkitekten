@@ -35,7 +35,7 @@ body.admin-menu {
 
 .head-container {
     background-color: white;
-    height: 30px;
+    height: 31px;
     /*    margin-top: 100px;*/
     position: relative;
     //top: 100px;
@@ -46,7 +46,7 @@ body.admin-menu {
 .head-container .row,
 .head-container .row aside,
 .head-container .row aside > div {
-    height: 30px;
+    height: 31px;
 }
 
 .head-container a.logo {
@@ -92,11 +92,18 @@ body.admin-menu {
     color: #1b1b1b;
     padding: 0.75em 1em;
 }
+.sf-menu.sf-style-white .sf-depth-2>a {
+    padding: 8px 15px;
+}
 
 .sf-menu.sf-style-white a.sf-with-ul, .sf-menu.sf-style-white span.nolink.sf-with-ul {
     padding-right: 25px;
 }
 
+.sf-menu.sf-style-white a.sf-depth-1 {
+    height: 30px;
+    padding-top: 13px;
+}
 a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     top: 0.5em;
 }
@@ -189,10 +196,12 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     width: 100%;
 }
 
-.region-head-search .form-actions button {
+.region-head-search .form-actions button,
+.region-head-search .form-actions button:hover,
+.region-head-search .form-actions button:focus {
     background: white none repeat scroll 0 0;
     border: medium none;
-    color: #898989;
+    color: #1b1b1b;
     float: right;
     font-size: 15px;
     font-weight: bold;
