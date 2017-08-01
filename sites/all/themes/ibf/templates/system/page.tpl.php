@@ -119,6 +119,9 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+      <?php if (!empty($page['content_bottom'])): ?>
+        <?php print render($page['content_bottom']); ?>
+      <?php endif; ?>
     </section>
     <?php if(arg(0)!='search') { ?>
     <aside class="col-sm-8">

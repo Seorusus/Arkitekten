@@ -419,3 +419,53 @@ body {
     background-size: 100% 100%;
     height: 100% !important;
 }
+
+.region-content-bottom > section{
+    background: black;padding: 5px 20px;
+}
+.region-content-bottom > section > h2.block-title{
+    color: white;    font-size: 15px;
+    font-weight: bold;margin: 0 0 5px;
+    text-transform: uppercase;
+}
+.region-content-bottom > section > h2.block-title.collapsed{ margin: 0;}
+.region-content-bottom > section > h2[data-toggle="collapse"]{
+    cursor: pointer;
+}
+#webform-client-form-25 .form-control {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 29px;
+    line-height: 1;
+    padding: 0;
+    position: relative;
+    transition: none 0s ease 0s ;
+    width: 70%;
+}
+#webform-client-form-25 .btn {
+    -moz-user-select: none;
+    background-image: none;
+    border: medium none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 3px 12px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+#webform-client-form-25 #edit-submitted-dit-design-upload-button { float: right;width: 25%;}
+#webform-client-form-25 div.help-block{ display: none;}
+#webform-client-form-25 div.form-actions{ padding: 10px; text-align: center;}
