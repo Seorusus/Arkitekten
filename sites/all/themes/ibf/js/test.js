@@ -31,10 +31,10 @@ e(function ($) {
                 var url_bg=$('markimg'+sid).attr('value');
                 if(url_bg.length>0)
                 {
-                    //$('body').attr('style','background-image: url('+url_bg+');');
-                    $('body').css({'background-image': 'none'});
+                    $('body').attr('style','background-image: url('+url_bg+');');
+                    //$('body').css({'background-image': 'none'});
                     $('body').append('<div class = "bg-overlay"></div>');
-                    $('.bg-overlay').css({'background-image' : 'url(' + url_bg + ')'});
+                    //$('.bg-overlay').css({'background-image' : 'url(' + url_bg + ')'});
                 }
 
             }		
