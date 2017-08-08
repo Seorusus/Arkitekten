@@ -1,4 +1,4 @@
-e(function ($) {
+(function ($) {
     Drupal.behaviors.yourName = {
         attach : function(context, settings) {
             $('#arrow-sub-page-left').click(function(){
