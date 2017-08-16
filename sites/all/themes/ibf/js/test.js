@@ -179,6 +179,10 @@ function interval(){
       slide = false;
     }
 
+    if(jQuery(item).hasClass('footer-images')){
+      slide = false;
+    }
+
     if((jQuery(item).is('a')) && (jQuery(item).hasClass('logo'))){
       slide = false;
     }
