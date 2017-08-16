@@ -209,6 +209,13 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     text-transform: uppercase;
 }
 
+.page-search .region-head-search .form-actions button,
+.page-search .region-head-search .form-actions button:hover,
+.page-search .region-head-search .form-actions button:focus {
+
+    color: #ae2e23;
+}
+
 .main-container-base {
 // margin-top: 110px;
     margin-top: 87.4px;
@@ -232,6 +239,8 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
     color: white;
     background: black;*/
 }
+.row .col-sm-12 .row .col-sm-8 .region-content  ,
+.row .col-sm-12 .row .col-sm-9 .region-content  ,
 .row .col-sm-12 .row .col-sm-12 .region-content  {
 
     color: white;
@@ -279,11 +288,26 @@ article.node-combo-page .field-name-field-ipaper-link a:first-child
 .page-node-10 .region-content-bottom > .block.block-block{ padding: 20px;}
 .page-node-10 .region-content-bottom iframe{float: left;margin-left: 5px;}
 .page-node-10 .region-content-bottom iframe::first-line {margin-left:0;}
-body.page-search #block-system-main > form,
-body.page-search #block-system-main > h2 {
+body.page-search #block-system-main > form{
     display: none;
 }
-
+body.page-search #block-system-main > h2 {
+    font-size: 15px;
+    margin: 20px;
+    font-weight: bold;
+}
+body.page-search #block-system-main ol.search-results {margin: 20px;
+    padding: 0;}
+body.page-search #block-system-main ol.search-results li.search-result
+{
+    list-style: outside none none;
+}
+body.page-search #block-system-main ol.search-results li.search-result h3 a,
+body.page-search #block-system-main ol.search-results li.search-result h3 a:hover
+{
+    font-size: 15px;
+    font-weight: bold; color: white;
+}
 .col-sm-8 .page-header {
     background: black none repeat scroll 0 0;
     border: medium none;

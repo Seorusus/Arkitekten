@@ -108,10 +108,13 @@
   <div class="row">
     <section class="col-sm-12" >
   <div class="row">
-    <section class="col-sm-<?=(arg(0)=='search'?'12':'4')?>" >
+    <section class="col-sm-<?=(arg(0)=='search'?'9':'4')?>" >
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
+      <?php if(arg(0)=='search') { ?>
+          <?php print $messages; ?>
+      <?php } ?>
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
