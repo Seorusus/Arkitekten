@@ -17,3 +17,8 @@ function ibf_form_alter(&$form, &$form_state, $form_id) {
 //        dpm($_POST);
     }
 }
+
+function ibf_preprocess_page(&$variables) {
+
+  drupal_add_library('system', 'effects.slide');
+}

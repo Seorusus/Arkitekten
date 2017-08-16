@@ -16,7 +16,7 @@ body {
     margin: 0;
 
     padding: 0;
-
+    overflow-x: hidden;
     height: 100%;
 
 }
@@ -519,3 +519,30 @@ body {
 #webform-client-form-25 #edit-submitted-dit-design-upload-button { float: right;width: 35%;}
 #webform-client-form-25 div.help-block{ display: none;}
 #webform-client-form-25 div.form-actions{ padding: 10px; text-align: center;}
+
+.bg_overlay, .bg_overlay_next, .markup{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+
+background-repeat: no-repeat;
+background-position: 0 0;
+background-size: 100% 100%;
+height: 100% !important;
+z-index: 999;
+}
+
+.markup{
+z-index: 1000;
+background: transparent;
+opacity: 1;
+}
+
+.bg_overlay_next{
+
+opacity: 1;
+left: 0;
+}
