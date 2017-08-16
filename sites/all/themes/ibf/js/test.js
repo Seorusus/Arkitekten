@@ -187,7 +187,7 @@ function interval(){
   });
    
    if(slide == true){
-     jQuery('#arrow-sub-page-left').trigger('click');
+     jQuery('#arrow-sub-page-right').trigger('click');
    }
 }
 
