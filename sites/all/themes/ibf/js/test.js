@@ -57,10 +57,12 @@
                     }
                     else{
                       if(jQuery('body').hasClass('not-front')){
-                        jQuery('h1').animate({'opacity' : 0}, 500);
+                        jQuery('h1').animate({'opacity' : 0}, 500, function(){
+                          slide_direction(cur_img, url_bg, direction, sid);
+                          });
                         jQuery('.region-content').animate({'opacity' : 0}, 500);
                         jQuery('.region-content-bottom').animate({'opacity' : 0}, 500, function(){
-                           slide_direction(cur_img, url_bg, direction, sid);
+
                           });
                       }
                       else{
@@ -68,7 +70,7 @@
                       }
 
 
-                            }
+                    }
 
 
 
