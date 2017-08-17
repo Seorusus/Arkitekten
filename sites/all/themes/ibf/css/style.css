@@ -223,6 +223,7 @@ a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
 
 .main-container-base section.col-sm-4 {
     /* padding-right: 5px; */
+    z-index: 100; 
     padding-right: 11.4px;
 }
 
