@@ -1,7 +1,7 @@
 (function ($) {
     Drupal.behaviors.yourName = {
         attach : function(context, settings) {
-          jQuery('h1').text('test noforeach cicle');
+
           if(jQuery('body').hasClass('front')){
             setInterval(function(){
               interval();
@@ -55,7 +55,6 @@
 
                     if(bg_id === undefined){
                        $('body').attr('style','background-image: url('+url_bg+');');
-                       //$('body').css({'background-image' : 'url('+url_bg+')'});
                     }
                     else{
 
@@ -174,8 +173,10 @@ function slide_direction(cur_img, url_bg, direction, sid){
 function interval(){
    var elements = document.querySelectorAll(':hover');
    var slide = true;
-
-   elements.forEach(function(item, i, arr) {
+   var trueArray = Array.prototype.slice.call(elements, 0);
+ //something here
+ 
+   trueArray.forEach(function(item, i, arr) {
     if(jQuery(item).is('article')){
       slide = false;
     }
@@ -204,12 +205,10 @@ function interval(){
       slide = false;
     }
   });
-
-   if(slide === true){
+   
+   if(slide == true){
      jQuery('#arrow-sub-page-right').trigger('click');
-
    }
-
 }
 
 
