@@ -38,7 +38,7 @@
             }
 
 
-            function slide(sid, bg_id =  undefined, direction = undefined) {
+            function slide(sid, bg_id, direction) {
 
                 if(bg_id === undefined){
 
@@ -173,7 +173,10 @@ function slide_direction(cur_img, url_bg, direction, sid){
 function interval(){
    var elements = document.querySelectorAll(':hover');
    var slide = true;
-   elements.forEach(function(item, i, arr) {
+   var trueArray = Array.prototype.slice.call(elements, 0);
+ //something here
+ 
+   trueArray.forEach(function(item, i, arr) {
     if(jQuery(item).is('article')){
       slide = false;
     }
