@@ -42,6 +42,13 @@ function ibf_preprocess_html(&$variables) {
   );
   $variables['body_attributes_array'] += $variables['attributes_array'];
 
+  $trail = menu_get_active_trail();
+
+  if((isset($trail[1])) && (isset($trail[1]['link_title']))){
+    if(($trail[1]['link_title'] == 'Projekter')|| ($trail[1]['link_title'] == 'Specialdesign')){
+      $variables['body_attributes_array']['class'][] = 'hide-fimages';
+    }
+  }
   // Navbar position.
   switch (bootstrap_setting('navbar_position')) {
     case 'fixed-top':
