@@ -64,9 +64,11 @@
                           slide_direction(cur_img, url_bg, direction, sid);
                           });
                         jQuery('.region-content').animate({'opacity' : 0}, 500);
-                        jQuery('.region-content-bottom').animate({'opacity' : 0}, 500, function(){
-
-                          });
+                        jQuery('.region-content-bottom').animate({'opacity' : 0}, 500, function(){});
+                        if(jQuery('body').hasClass('hide-fimages')){
+                          jQuery('.footer-images').animate({'opacity' : 0}, 500);
+                          jQuery('.footer-label-images').animate({'opacity' : 0}, 500);
+                          }
                       }
                       else{
                         slide_direction(cur_img, url_bg, direction, sid);
@@ -165,6 +167,8 @@ function slide_direction(cur_img, url_bg, direction, sid){
           jQuery('h1').animate({'opacity' : 1}, 500);
           jQuery('.region-content').animate({'opacity' : 1}, 500);
           jQuery('.region-content-bottom').animate({'opacity' : 1}, 500);
+          jQuery('.footer-images').animate({'opacity' : 1}, 500);
+          jQuery('.footer-label-images').animate({'opacity' : 1}, 500);
         }
        });
   }
