@@ -104,7 +104,8 @@ function slide_direction(cur_img, url_bg, direction, sid){
 
 
   var markup = jQuery('body').html();
-  var scrt = jQuery('html, body').scrollTop();
+  var scrt = jQuery(document).scrollTop();
+
   jQuery('body').append('<div class = "bg_overlay"></div>');
   jQuery('.bg_overlay').css({'top' : scrt});
   jQuery('body').append('<div class = "bg_overlay_next"></div>');
